@@ -53,11 +53,11 @@ document.addEventListener("DOMContentLoaded", () => {
   function displayFeedback(isValid, messages) {
     feedbackDiv.style.display = "block";
     if (isValid) {
-      feedbackDiv.textContent = "Form submitted successfully!";
-      feedbackDiv.style.color = "#2e8a2e"; // green for success
+      feedbackDiv.textContent = "Registration successful!";
+      feedbackDiv.style.color = "#2e8a2e"; // success green
     } else {
       feedbackDiv.innerHTML = messages.join("<br>");
-      feedbackDiv.style.color = "#dc3545"; // red for errors
+      feedbackDiv.style.color = "#dc3545"; // error red
     }
   }
 });
